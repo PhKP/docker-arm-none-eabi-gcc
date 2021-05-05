@@ -15,6 +15,6 @@ RUN apt-get update && \
       bzip2 \
       wget && \
     apt-get clean
-RUN wget -qO- https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2 | tar -xj
+RUN wget -qO- https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2 | tar -xj
 
-ENV PATH "/work/gcc-arm-none-eabi-8-2018-q4-major/bin:$PATH"
+ENV PATH "/work/gcc-arm-none-eabi-8-2019-q3-update/bin:$PATH"
